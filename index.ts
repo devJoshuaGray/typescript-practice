@@ -180,6 +180,8 @@ waymaker.mapHover();
 
 //Interfaces-----Blueprints of types that are easily reused or updated throughout your application.
 
+///////////////Interfaces, class implementing interfaces, constructor, new instance of class, calling methos using new instance/////////////////
+
 interface Person {
     firstName: string;
     lastName?: string;
@@ -198,7 +200,7 @@ class ContactCard implements Person, Contact {
       this.firstName = firstName;
       this.phoneNumber = phoneNumber;
     }
-    
+
     sendMessage(){
         console.log("Name: " + this.firstName + '\n' + "Number: " + this.phoneNumber);
     }
@@ -206,7 +208,9 @@ class ContactCard implements Person, Contact {
 
 let newPerson = new ContactCard("Joshua", 3347016262);
 newPerson.sendMessage();
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+//
 
 
 
